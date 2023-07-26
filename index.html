@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>FeatherCast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/x-icon">
+  <title>Weather App</title>
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    Weather App
-    <script src="assets/index.js"></script>
+  <div class="container">
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false">
+      <button id="searchBtn"><i class='bx bx-search-alt-2'></i></button>
+    </div>
+    <div class="weather-details">
+      <div class="city-info">
+          <img src="./assets/images/clear.png" alt="Weather Icon" id="weatherIcon">
+          <p class="temperature" id="temperature">32°C</p>
+          <h2 id="cityName" class="city">New Delhi</h2>
+      </div>
+      <div class="additional-info">
+        <div class="col">
+            <i class='bx bx-droplet'></i>
+            <p id="humidity">10%</p>
+            <p>Humidity</p>
+        </div>
+        <div class="col">
+            <i class='bx bx-wind'></i>
+            <p id="windSpeed">50 m/s</p>
+            <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./config.js"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
