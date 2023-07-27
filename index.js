@@ -1,6 +1,4 @@
-import config from "./config.js";
-
-const apiKey = config.apiKey;
+const apiKey = "79a330e50f878b2c78188626d77f0471";
 const input = document.getElementById("cityInput");
 const searchBtn = document.getElementById("searchBtn");
 const error = document.getElementById("error");
