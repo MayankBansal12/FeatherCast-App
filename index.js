@@ -21,7 +21,7 @@ function checkWeather(url) {
           data.wind?.speed + "km/h";
         document.getElementById(
           "weatherIcon"
-        ).src = `./assets/images/${data.weather[0].main}.png`;
+        ).src = `./assets/images/${data.weather[0].main.toLowerCase()}.png`;
       }
     })
     .catch((err) => {
